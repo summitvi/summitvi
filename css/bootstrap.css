@@ -1,0 +1,110 @@
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  visibility: visible;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  display: none;
+  list-style: none;
+  font-size: 14px;
+  background-color: #F1F0F5  ;
+  border-radius: 0 0 0 4px;
+  background-clip: padding-box;
+}
+@media (min-width: 768px) {
+  .dropdown-menu {
+    top: 200%;
+    left: 0;
+    visibility: hidden;
+    float: left;
+    display: block;
+    min-width: 160px;
+    padding: 5px 0;
+    opacity: 0;
+  }
+  .dropdown-menu:before{
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 30%;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent transparent #063847 transparent;
+  }
+  .dropdown-menu .dropdown-menu {
+    top: -3px;
+    left: 120%;
+    display: block;
+    float: left;
+    z-index: 1000;
+    margin: 2px 0 0;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .dropdown-menu .dropdown-menu:before{
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: transparent #0e6e8c transparent transparent;
+  }
+  .dropdown:hover > .dropdown-menu {
+    opacity: 1 ;
+    top: 100% ;
+    visibility: visible ;
+  }
+  .dropdown-menu .dropdown:hover > .dropdown-menu {
+    opacity: 1;
+    top: -3px;
+    left: 100%;
+    padding: 5px 0;
+    visibility: visible;
+  }
+}
+.dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #0e6e8c;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  color: #007bff;
+  line-height: 1.42857143;
+  white-space: nowrap;
+}
+.navbar-nav > li > a {
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  line-height: 20px;
+  overflow: hidden;
+  text-align: center;
+}
+.derecha{
+float:right;
+}
+.site-footer{
+  background-color: #f8f8ff;
+color: #b2b2b2;
+margin-top: 30px;
+padding-top:30px;
+}
+.csss{
+  border-radius: 10px;
+  color:#007bff ;
+}
+small{
+  color:#007bff ;
+}
